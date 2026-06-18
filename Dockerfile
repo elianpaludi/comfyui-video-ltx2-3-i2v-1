@@ -1,2 +1,2 @@
- # Base worker-comfyui (ComfyUI + manager). Modelos desde el network volume en /runpod-volume/models
- FROM runpod/worker-comfyui:5.8.4-base
+FROM runpod/worker-comfyui:5.8.4-base
+COPY extra_model_paths.yaml /comfyui/extra_model_paths.yaml
